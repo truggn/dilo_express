@@ -1,0 +1,25 @@
+{
+  "name": "dilo_express",
+  "version": "1.0.0",
+  "description": "v1_app_dilo_express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truggn/dilo_express.git"
+  },
+  "keywords": [
+    "dilo_express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truggn/dilo_express/issues"
+  },
+  "homepage": "https://github.com/truggn/dilo_express#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
