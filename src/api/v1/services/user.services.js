@@ -25,7 +25,7 @@ const that = module.exports = {
                 if(!otpHolder.length){
                     return {
                         code: 404,
-                        message:'Exprired OTP '
+                        message:'Exprired OTP'
                     }
                 }
                 // nếu mà otp còn sống.
@@ -42,9 +42,16 @@ const that = module.exports = {
                     }
                 }
                 if(isValid && phoneNumber === lastOTP.phoneNumber){
+                    const randomNameUser = sendOTP.generate(15,{
+                        digits: true,
+                        upperCaseAlphabets: false,
+                        specialChars: false,
+                        lowerCaseAlphabets: true
+                    })
                     // tao user
                     const user = await _User.create({
-                        phoneNumber
+                        phoneNumber,
+                        UserName:randomNameUser.concat(phoneNumber)
                     })
                     if(user){
                         // neu tao user thanh cong thi xoa otp di

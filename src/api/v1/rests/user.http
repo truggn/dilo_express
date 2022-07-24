@@ -1,6 +1,17 @@
+
+### TAO TAI KHOAN
+
 POST http://localhost:4000/v1/api/register
 Content-Type: application/json
 
 {
+    "phoneNumber":"0355734234"
+}
+### VERIFY OTP
+POST http://localhost:4000/v1/api/verify-otp
+Content-Type: application/json
+
+{
+    "otp":"557820",
     "phoneNumber":"0355734234"
 }
